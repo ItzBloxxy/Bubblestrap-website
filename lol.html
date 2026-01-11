@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Joining Roblox</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 50px; }
+    #joinButton { display: none; padding: 10px 20px; background: #00b06b; color: white; text-decoration: none; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h1 id="status">Preparing to join...</h1>
+  <a id="joinButton" href="#">Click if not redirected</a>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const placeId = params.get('placeId');
+      const gameInstanceId = params.get('gameInstanceId');
+      const status = document.getElementById('status');
+      const joinButton = document.getElementById('joinButton');
+
+      if (placeId && gameInstanceId) {
+        const robloxUrl = `roblox://placeId=${placeId}&gameInstanceId=${gameInstanceId}`;
+        status.textContent = 'Joining...';
+        joinButton.href = robloxUrl;
+        joinButton.style.display = 'inline-block';
+
+        // Auto-join
+        setTimeout(() => {
+          window.location.href = robloxUrl;
+        }, 1000);
+      } else {
+        status.textContent = "Error: Missing Place ID or Game Instance ID.";
+      }
+    });
+  </script>
+</body>
+</html>
