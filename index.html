@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubblestrap</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/icons/website.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%20%21%22%23%24%25%26%27%28%29%2A%2B%2C-./%3A%3B%3C%3D%3E%3F%40%5B%5C%5D%5E_%6B%7B%7C%7D%7E%E2%9C%A8&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="join-overlay">
+    <div class="loader"></div>
+    <h1 id="join-status">Preparing to join...</h1>
+    <p style="opacity:.6;margin-bottom:20px;">Launching via Bubblestrap Protocol</p>
+    <a id="manualJoinButton" class="btn" href="#">
+        Click if not redirected
+    </a>
+</div>
+
+<div id="main-site">
+    <div class="bubble-container">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <div class="social-header">
+        <a href="https://discord.gg/VTKQCSwPvU" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+            <span class="icon icon-discord"></span>
+        </a>
+        <a href="https://github.com/ItzBloxxy/Bubblestrap" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <span class="icon icon-github"></span>
+        </a>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="hero">
+        <h1 class="reveal">Bubblestrap</h1>
+        <p class="reveal">
+            A fork of Fishstrap/Bloxstrap — lightweight, customizable, and open source.
+        </p>
+
+        <a
+            id="download-latest"
+            class="btn reveal"
+            href="https://github.com/ItzBloxxy/Bubblestrap/releases/latest/download/Bubblestrap.exe"
+        >
+            <span class="icon icon-download btn-icon"></span>
+            Download Bubblestrap
+        </a>
+    </div>
+
+    <section id="about">
+        <h2 class="reveal">About</h2>
+        <div class="about-box reveal">
+            <p>
+                Bubblestrap is a fast, lightweight Roblox bootstrapper.
+                 It's an upgraded version of Fishstrap, featuring code rewrites to fix bad code and make it cleaner, faster, and easier on your system.
+            </p>
+        </div>
+    </section>
+
+<section id="features">
+        <h2 class="reveal">✨ Features</h2>
+
+        <div class="features-container">
+            <!-- INTEGRATIONS -->
+            <div class="feature-category reveal">
+                <h3>Integrations</h3>
+                <ul class="feature-list">
+                    <li>Activity tracking & detailed player logs</li>
+                    <li>Detailed server information (Thanks to RoValra)</li>
+                    <li>Fully customizable Discord Rich Presence</li>
+                    <li>Multi-instance support</li>
+                    <li>Prompt to confirm when launching another Roblox instance</li>
+                    <li>Auto-launch integrations (launch other programs with Roblox)</li>
+                    <li>Don't exit to the desktop app</li>
+                </ul>
+            </div>
+
+            <!-- BOOTSTRAPPER -->
+            <div class="feature-category reveal">
+                <h3>Bootstrapper</h3>
+                <ul class="feature-list">
+                    <li>Memory trimmer with threshold & interval</li>
+                    <li>Disable Roblox crash handler to reduce resource usage</li>
+                    <li>Background updates</li>
+                    <li>Auto-update Bubblestrap</li>
+                    <li>Cache, logs, and Bubblestrap log cleaner</li>
+                    <li>Roblox System Tray options (Modal / Minimize to Tray)</li>
+                    <li>Roblox App theme selector</li>
+                    <li>Hide version and production details</li>
+                    <li>Toggle launch Roblox on startup</li>
+                </ul>
+            </div>
+
+            <!-- DEPLOYMENT -->
+            <div class="feature-category reveal">
+                <h3>Deployment</h3>
+                <ul class="feature-list">
+                    <li>Channel changer</li>
+                    <li>Skip Roblox updates</li>
+                    <li>Force Roblox reinstallation</li>
+                    <li>Install previous Roblox versions</li>
+                    <li>Use static directory for Roblox</li>
+                </ul>
+            </div>
+
+            <!-- MODS -->
+            <div class="feature-category reveal">
+                <h3>Mods</h3>
+                <ul class="feature-list">
+                    <li>Use custom fonts</li>
+                    <li>Use custom emojis</li>
+                    <li>Custom death sounds</li>
+                    <li>Old 2014 character sounds</li>
+                    <li>Old avatar editor background (2020)</li>
+                    <li>Custom Roblox & Roblox Studio icons</li>
+                    <li>Customize cursors (ShiftLock, Arrow, IBeam, etc.)</li>
+                    <li>Cursor sets with easy import & export</li>
+                </ul>
+            </div>
+
+            <!-- MISC FEATURES -->
+            <div class="feature-category reveal">
+                <h3>Other</h3>
+                <ul class="feature-list">
+                    <li>FFlag settings & FFlag editor</li>
+                    <li>Framerate cap unlocking</li>
+                    <li>Custom Bubblestrap game invite links (DEEPLINK)</li>
+                    <li>Roblox Studio support</li>
+                    <li>Global Settings page</li>
+                    <li>Full translations unlike other bootstrappers</li>
+                    <li>No analytics at all</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-item">
+                <h4>Bubblestrap</h4>
+                <p>Fast, open-source Roblox bootstrapper.</p>
+            </div>
+
+            <div class="footer-item">
+                <h4>Support</h4>
+                <a href="https://github.com/ItzBloxxy/Bubblestrap/issues/new">New Issue</a>
+                <a href="https://github.com/ItzBloxxy/Bubblestrap">GitHub</a>
+                <a href="https://discord.gg/VTKQCSwPvU">Discord</a>
+            </div>
+
+            <div class="footer-item">
+                <h4>Quick Links</h4>
+                <a href="#features">Top Features</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            © 2026 Designed by ItzBloxxy | Not affiliated with Roblox Corp.
+        </div>
+    </footer>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
+
+
