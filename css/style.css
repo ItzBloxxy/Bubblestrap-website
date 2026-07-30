@@ -4,7 +4,6 @@
     --primary-accent: #7dd3fc;
     --secondary-accent: #c084fc;
     --text-muted: #888;
-    
 }
 
 * {
@@ -275,8 +274,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    content-visibility: auto;
-    contain-intrinsic-size: auto 600px;
 }
 
 h2 {
