@@ -153,7 +153,6 @@ nav ul li a {
     overflow: hidden;
     pointer-events: none;
     isolation: isolate;
-    will-change: transform;
 }
 
 .bubble {
