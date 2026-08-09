@@ -52,8 +52,8 @@ function handleRedirect() {
 
     const accessCode = params.get("accessCode")
     const gameInstanceId = params.get("gameInstanceId")
-    if (accessCode) robloxUrl += `&accessCode=${accessCode}`
-    else if (gameInstanceId) robloxUrl += `&gameInstanceId=${gameInstanceId}`
+    if (accessCode) robloxUrl += `&accessCode=${encodeURIComponent(accessCode)}`
+    else if (gameInstanceId) robloxUrl += `&gameInstanceId=${encodeURIComponent(gameInstanceId)}`
 
     document.getElementById("join-status").textContent = "Launching Roblox…"
 
