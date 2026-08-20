@@ -1,15 +1,20 @@
+<!-- TO DO LIST IN THE FUTURE:
+- Add something on the left, maybe a sidebar? where you can report bugs, and other stuff idk? wiki too
+- remove the footer grid
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bubblestrap</title>
-
+    <meta property="og:type" content="website">
     <meta name="description"
         content="Bubblestrap is a fast, lightweight, and customizable open-source Roblox bootstrapper fork of Fishstrap.">
 
-    <meta property="og:type" content="website">
     <meta property="og:title" content="Bubblestrap">
     <meta property="og:description"
         content="An upgraded, cleaner, and faster version of Fishstrap featuring customizable Discord Rich Presence, FFlag editing, and advanced mods.">
@@ -17,11 +22,9 @@
 
     <link rel="icon" type="image/x-icon" href="assets/icons/website.ico">
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -29,7 +32,7 @@
     <div id="join-overlay">
         <div class="loader"></div>
         <h1 id="join-status">Preparing to join...</h1>
-        <p style="opacity:.6;margin-bottom:20px;">Launching via Bubblestrap Protocol</p>
+        <p class="overlay-sub">Launching via Bubblestrap Protocol</p>
         <a id="manualJoinButton" class="btn" href="#">
             Click if not redirected
         </a>
@@ -185,7 +188,7 @@
                 </div>
 
                 <div class="footer-item">
-                    <h4>Quick Links</h4>
+                    <h4>Navigate</h4>
                     <a href="#features">Top Features</a>
                     <a href="#about">About</a>
                 </div>
