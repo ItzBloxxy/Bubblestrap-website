@@ -1,5 +1,3 @@
-console.log("loaded");
-
 function initObserver() {
     var observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
