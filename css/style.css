@@ -419,13 +419,6 @@ footer {
         animation-duration: 24s;
     }
 }
-
-/* BETA */
-::selection {
-    background: var(--primary-accent);
-    color: var(--bg-main);
-}
-
 @media (hover: hover) {
 
     .btn:hover {
