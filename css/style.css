@@ -419,6 +419,7 @@ footer {
         animation-duration: 24s;
     }
 }
+
 @media (hover: hover) {
 
     .btn:hover {
